@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kurikulum - TI & SI Universitas ABCD</title>
+  <meta name="description" content="Struktur kurikulum Teknik Informatika dan Sistem Informasi Universitas ABCD">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css " rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css " />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="TI & SI ABCD">
+      <i class="bi bi-code-square me-2 fs-4"></i>
+      <span class="fw-bold">TI & SI ABCD</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="index.html">
+            <i class="bi bi-house-door me-2"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#profil">
+            <i class="bi bi-info-circle me-2"></i>Profil
+          </a>
+           <li class="nav-item dropdown">
+    <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="fasilitasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-building me-2"></i>Fasilitas
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="fasilitasDropdown">
+      <li><a class="dropdown-item" href="laboratorium.html">Laboratorium</a></li>
+      <li><a class="dropdown-item" href="perpustakaan.html">Perpustakaan</a></li>
+      <li><a class="dropdown-item" href="#fasilitas-olahraga">Olahraga</a></li>
+      <li><a class="dropdown-item" href="#fasilitas-kampus">Kampus</a></li>
+    </ul>
+  </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#prestasi">
+            <i class="bi bi-trophy me-2"></i>Prestasi
+          </a>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link d-flex align-items-center" href="kurikulum.html">
+    <i class="bi bi-journal me-2"></i>Kurikulum
+      </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#kontak">
+            <i class="bi bi-envelope me-2"></i>Kontak
+          </a>
+        </li>
+      </ul>
+<form class="d-flex ms-3 me-auto">
+  <div class="input-group input-group-sm">
+    <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Cari..." aria-label="Search" id="searchInput">
+    <span class="input-group-text bg-transparent border-0 text-white">
+      <i class="bi bi-search"></i>
+    </span>
+  </div>
+</form>
+<div class="dropdown-menu dropdown-menu-end" id="searchResultsDropdown" style="display: none;">
+  <a class="dropdown-item" href="#profil">Profil Prodi TI & SI</a>
+  <a class="dropdown-item" href="#fakultas">Fakultas di Universitas</a>
+  <a class="dropdown-item" href="#prestasi">Prestasi Membanggakan</a>
+  <a class="dropdown-item" href="#kegiatan">Dokumentasi Kegiatan</a>
+  <a class="dropdown-item" href="#testimoni">Testimoni Alumni</a>
+  <a class="dropdown-item" href="#kontak">Hubungi Kami</a>
+</div>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Kurikulum -->
+  <section id="hero" class="hero py-5 text-center bg-primary text-white">
+    <div class="container">
+      <h1 class="display-4 fade-in">Kurikulum Program Studi TI & SI</h1>
+      <p class="lead mt-3 fade-in">Struktur mata kuliah yang lengkap dan berbasis kompetensi</p>
+    </div>
+  </section>
+
+  <!-- Kurikulum Section -->
+  <section id="kurikulum" class="kurikulum py-5">
+    <div class="container">
+      <h2 class="section-title fade-in mb-5">Struktur Kurikulum</h2>
+
+      <div class="accordion" id="semesterAccordion">
+        
+        <!-- Semester 1 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="bi bi-book me-2"></i>
+              Semester 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Pengantar Teknologi Informasi</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Matematika Diskrit</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Pemrograman Dasar</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Pancasila dan Kewarganegaraan</span>
+                  <span class="badge bg-secondary rounded-pill">2 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 2 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="bi bi-book me-2"></i>
+              Semester 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Algoritma dan Struktur Data</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Logika Informatika</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Kalkulus</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Agama dan Etika Profesi</span>
+                  <span class="badge bg-secondary rounded-pill">2 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 3 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="bi bi-book me-2"></i>
+              Semester 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Dasar-dasar Sistem Informasi</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Desain Antarmuka Pengguna</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Pemrograman Berorientasi Objek</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Statistika dan Probabilitas</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 4 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <i class="bi bi-book me-2"></i>
+              Semester 4
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Manajemen Proyek TI</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Dasar-dasar Jaringan</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Database Sistem Informasi</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Kewirausahaan</span>
+                  <span class="badge bg-secondary rounded-pill">2 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 5 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <i class="bi bi-book me-2"></i>
+              Semester 5
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Pemrograman Web</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Manajemen Basis Data</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Jaringan Komputer</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Etika dan Hukum Digital</span>
+                  <span class="badge bg-secondary rounded-pill">2 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 6 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <i class="bi bi-book me-2"></i>
+              Semester 6
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Rekayasa Perangkat Lunak</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Manajemen Proyek Sistem Informasi</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Mobile Programming</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Manajemen Keamanan Informasi</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 7 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <i class="bi bi-book me-2"></i>
+              Semester 7
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Kecerdasan Buatan</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Pemrograman Lanjut</span>
+                  <span class="badge bg-secondary rounded-pill">4 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Big Data dan Analisis</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Kerja Praktek</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester 8 -->
+        <div class="accordion-item fade-in">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              <i class="bi bi-book me-2"></i>
+              Semester 8
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#semesterAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Skripsi</span>
+                  <span class="badge bg-secondary rounded-pill">6 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Kuliah Kerja Nyata</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Manajemen TI</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-dot me-2"></i>Komputasi Awan</span>
+                  <span class="badge bg-secondary rounded-pill">3 SKS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+ <!-- Footer -->
+<footer class="bg-primary text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Program Studi Teknik Informatika & Sistem Informasi - Universitas ABCD. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js "></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laboratorium - TI & SI Universitas ABCD</title>
+  <meta name="description" content="Fasilitas laboratorium di Program Studi Teknik Informatika dan Sistem Informasi Universitas ABCD">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css " rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css " />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="TI & SI ABCD">
+      <i class="bi bi-code-square me-2 fs-4"></i>
+      <span class="fw-bold">TI & SI ABCD</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="index.html">
+            <i class="bi bi-house-door me-2"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#profil">
+            <i class="bi bi-info-circle me-2"></i>Profil
+          </a>
+           <li class="nav-item dropdown">
+    <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="fasilitasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-building me-2"></i>Fasilitas
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="fasilitasDropdown">
+      <li><a class="dropdown-item" href="laboratorium.html">Laboratorium</a></li>
+      <li><a class="dropdown-item" href="perpustakaan.html">Perpustakaan</a></li>
+      <li><a class="dropdown-item" href="#fasilitas-olahraga">Olahraga</a></li>
+      <li><a class="dropdown-item" href="#fasilitas-kampus">Kampus</a></li>
+    </ul>
+  </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#prestasi">
+            <i class="bi bi-trophy me-2"></i>Prestasi
+          </a>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link d-flex align-items-center" href="kurikulum.html">
+    <i class="bi bi-journal me-2"></i>Kurikulum
+      </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#kontak">
+            <i class="bi bi-envelope me-2"></i>Kontak
+          </a>
+        </li>
+      </ul>
+<form class="d-flex ms-3 me-auto">
+  <div class="input-group input-group-sm">
+    <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Cari..." aria-label="Search" id="searchInput">
+    <span class="input-group-text bg-transparent border-0 text-white">
+      <i class="bi bi-search"></i>
+    </span>
+  </div>
+</form>
+<div class="dropdown-menu dropdown-menu-end" id="searchResultsDropdown" style="display: none;">
+  <a class="dropdown-item" href="#profil">Profil Prodi TI & SI</a>
+  <a class="dropdown-item" href="#fakultas">Fakultas di Universitas</a>
+  <a class="dropdown-item" href="#prestasi">Prestasi Membanggakan</a>
+  <a class="dropdown-item" href="#kegiatan">Dokumentasi Kegiatan</a>
+  <a class="dropdown-item" href="#testimoni">Testimoni Alumni</a>
+  <a class="dropdown-item" href="#kontak">Hubungi Kami</a>
+</div>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero py-5 text-center">
+    <div class="container">
+      <h1 class="display-5 fade-in">Laboratorium Teknik Informatika & Sistem Informasi</h1>
+      <p class="lead mt-3 fade-in">Fasilitas pendukung pembelajaran praktis dan inovasi teknologi</p>
+    </div>
+  </section>
+
+  <!-- Gradient Divider -->
+  <div class="gradient-divider"></div>
+
+  <!-- Laboratorium Section -->
+  <section id="laboratorium" class="laboratorium py-5">
+    <div class="container">
+      <h2 class="section-title fade-in mb-5">Fasilitas Laboratorium</h2>
+
+      <!-- Lab Pemrograman -->
+      <div class="row align-items-center g-4 mb-5 fade-in">
+        <div class="col-md-6">
+          <img src="https://source.unsplash.com/600x400/?programming,code,lab" class="img-fluid rounded shadow-sm" alt="Laboratorium Pemrograman">
+        </div>
+        <div class="col-md-6">
+          <h3>Laboratorium Pemrograman</h3>
+          <p>Laboratorium ini digunakan untuk praktikum pemrograman dasar, pemrograman lanjut, dan pengembangan perangkat lunak. Dilengkapi dengan komputer berbasis Windows dan Linux, serta akses internet cepat untuk mendukung pembelajaran mahasiswa.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-pc me-2 text-primary"></i> PC berbasis Windows dan Linux</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-wifi me-2 text-primary"></i> Internet 100 Mbps</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-door-open me-2 text-primary"></i> Buka setiap hari kerja</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lab Jaringan -->
+      <div class="row align-items-center g-4 mb-5 fade-in">
+        <div class="col-md-6 order-md-2">
+          <img src=" https://source.unsplash.com/600x400/?network,server,lab" class="img-fluid rounded shadow-sm" alt="Laboratorium Jaringan">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Laboratorium Jaringan</h3>
+          <p>Laboratorium jaringan komputer menyediakan fasilitas untuk belajar tentang sistem jaringan, keamanan jaringan, dan pengembangan infrastruktur digital. Mahasiswa dapat melakukan simulasi jaringan dan praktikum keamanan data di sini.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-router me-2 text-primary"></i> Perangkat jaringan (router, switch, dll.)</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-shield-lock me-2 text-primary"></i> Praktikum keamanan jaringan</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-diagram-3 me-2 text-primary"></i> Simulasi topologi jaringan</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lab AI & Data Science -->
+      <div class="row align-items-center g-4 mb-5 fade-in">
+        <div class="col-md-6">
+          <img src=" https://source.unsplash.com/600x400/?ai,machine-learning,lab" class="img-fluid rounded shadow-sm" alt="Laboratorium AI">
+        </div>
+        <div class="col-md-6">
+          <h3>Laboratorium AI & Data Science</h3>
+          <p>Laboratorium ini dirancang untuk pengembangan sistem berbasis kecerdasan buatan dan analisis data besar. Mahasiswa dapat mengakses perangkat keras dengan spesifikasi tinggi dan tools seperti Python, TensorFlow, dan Hadoop.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-robot me-2 text-primary"></i> Pengembangan sistem AI</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-graph-up-arrow me-2 text-primary"></i> Analisis data dengan Python</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-cpu me-2 text-primary"></i> Komputer dengan GPU</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lab UI/UX & Mobile -->
+      <div class="row align-items-center g-4 mb-5 fade-in">
+        <div class="col-md-6 order-md-2">
+          <img src=" https://source.unsplash.com/600x400/?design,mobile,ux" class="img-fluid rounded shadow-sm" alt="Laboratorium UI/UX">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Laboratorium UI/UX & Mobile Development</h3>
+          <p>Laboratorium ini digunakan untuk praktikum desain antarmuka pengguna (UI), pengalaman pengguna (UX), dan pengembangan aplikasi mobile Android & iOS. Mahasiswa dilatih untuk menciptakan aplikasi yang intuitif dan user-friendly.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-phone me-2 text-primary"></i> Praktikum mobile development</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-brush me-2 text-primary"></i> Tools desain UI/UX (Figma, Adobe XD)</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-mouse me-2 text-primary"></i> Prototyping aplikasi</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lab Cloud -->
+      <div class="row align-items-center g-4 fade-in">
+        <div class="col-md-6">
+          <img src=" https://source.unsplash.com/600x400/?cloud,server,technology" class="img-fluid rounded shadow-sm" alt="Laboratorium Cloud">
+        </div>
+        <div class="col-md-6">
+          <h3>Laboratorium Teknologi Cloud</h3>
+          <p>Laboratorium ini dirancang untuk mendukung pembelajaran komputasi awan, cloud architecture, dan serverless computing. Mahasiswa dapat menggunakan platform seperti AWS, Google Cloud, dan Microsoft Azure untuk membangun infrastruktur digital berbasis cloud.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-cloud me-2 text-primary"></i> Akses ke AWS & Google Cloud</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-server me-2 text-primary"></i> Simulasi cloud infrastructure</li>
+            <li class="list-group-item d-flex align-items-center"><i class="bi bi-laptop me-2 text-primary"></i> Praktikum serverless computing</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+ <!-- Footer -->
+<footer class="bg-primary text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Program Studi Teknik Informatika & Sistem Informasi - Universitas ABCD. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js "></script>
+   <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

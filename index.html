@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Prodi TI & SI</title>
+  <meta name="description" content="Profil Program Studi Teknik Informatika dan Sistem Informasi Universitas ABCD" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Modern Preloader -->
+<div class="loader-container">
+  <div class="loader">
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__ball"></div>
+  </div>
+</div>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="TI & SI ABCD">
+      <i class="bi bi-code-square me-2 fs-4"></i>
+      <span class="fw-bold">TI & SI ABCD</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#hero">
+            <i class="bi bi-house-door me-2"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#profil">
+            <i class="bi bi-info-circle me-2"></i>Profil
+          </a>
+           <li class="nav-item dropdown">
+    <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="fasilitasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-building me-2"></i>Fasilitas
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="fasilitasDropdown">
+      <li><a class="dropdown-item" href="laboratorium.html">Laboratorium</a></li>
+      <li><a class="dropdown-item" href="perpustakaan.html">Perpustakaan</a></li>
+      <li><a class="dropdown-item" href="#fasilitas-olahraga">Olahraga</a></li>
+      <li><a class="dropdown-item" href="#fasilitas-kampus">Kampus</a></li>
+    </ul>
+  </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#prestasi">
+            <i class="bi bi-trophy me-2"></i>Prestasi
+          </a>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link d-flex align-items-center" href="kurikulum.html">
+    <i class="bi bi-journal me-2"></i>Kurikulum
+      </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#kontak">
+            <i class="bi bi-envelope me-2"></i>Kontak
+          </a>
+        </li>
+      </ul>
+<form class="d-flex ms-3 me-auto">
+  <div class="input-group input-group-sm">
+    <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Cari..." aria-label="Search" id="searchInput">
+    <span class="input-group-text bg-transparent border-0 text-white">
+      <i class="bi bi-search"></i>
+    </span>
+  </div>
+</form>
+<div class="dropdown-menu dropdown-menu-end" id="searchResultsDropdown" style="display: none;">
+  <a class="dropdown-item" href="#profil">Profil Prodi TI & SI</a>
+  <a class="dropdown-item" href="#fakultas">Fakultas di Universitas</a>
+  <a class="dropdown-item" href="#prestasi">Prestasi Membanggakan</a>
+  <a class="dropdown-item" href="#kegiatan">Dokumentasi Kegiatan</a>
+  <a class="dropdown-item" href="#testimoni">Testimoni Alumni</a>
+  <a class="dropdown-item" href="#kontak">Hubungi Kami</a>
+</div>
+    </div>
+  </div>
+</nav>
+
+<!-- Dropdown Hasil Pencarian -->
+<div class="search-dropdown dropdown-menu" id="searchResultsDropdown" style="display: none; position: absolute; top: 50px; width: 100%; z-index: 1000;">
+  <!-- Hasil akan dimasukkan secara dinamis -->
+</div>
+
+  <!-- Hero Section -->
+<section id="hero" class="hero py-5 text-center">
+  <div class="container">
+    <h1 class="typewriter">Profil Program Studi TI & SI</h1>
+    <p class="lead mt-3">Lulusan unggul di bidang teknologi informasi</p>
+    <div class="mt-4 fade-in">
+    </div>
+  </div>
+</section>
+
+<!-- Profil -->
+<section id="profil" class="profil py-5">
+  <div class="container">
+    <h2 class="section-title fade-in">Tentang Kami</h2>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <p class="fade-in">
+          Program Studi Teknik Informatika dan Sistem Informasi Universitas bertujuan untuk menciptakan lulusan yang kompeten di bidang teknologi informasi, berlandaskan nilai-nilai Islam dan kebangsaan. Kami menekankan pada pengembangan keterampilan teknis yang solid, kemampuan inovasi, serta penerapan teknologi dalam menyelesaikan permasalahan dunia nyata.
+        </p>
+        <p class="fade-in mt-3">
+          Dengan kurikulum yang disusun secara adaptif terhadap perkembangan industri 4.0 dan society 5.0, mahasiswa dibekali tidak hanya dengan kemampuan pemrograman, jaringan komputer, dan sistem basis data, tetapi juga dengan soft skill seperti kepemimpinan, etika profesional, dan komunikasi efektif. Kami juga mengintegrasikan pembelajaran berbasis proyek, riset terapan, serta kolaborasi dengan industri.
+        </p>
+        <p class="fade-in mt-3">
+          Keunggulan dari program studi ini terletak pada kolaborasi strategis dengan mitra industri, program magang nasional, serta peluang sertifikasi internasional bagi mahasiswa. Selain itu, kami juga aktif dalam berbagai kompetisi, seminar nasional, dan program kewirausahaan digital yang mendukung pengembangan potensi mahasiswa secara menyeluruh.
+        </p>
+        <p class="fade-in mt-3">
+          Dengan lingkungan belajar yang inklusif, dosen berpengalaman, serta fasilitas laboratorium modern, kami yakin Prodi Teknik Informatika dan Sistem Informasi menjadi pilihan terbaik bagi calon mahasiswa yang ingin berkembang sebagai profesional TI masa depan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Visi & Misi -->
+<section id="visimisi" class="visimisi py-5">
+  <div class="container">
+    <h2 class="section-title fade-in mb-5">Visi & Misi</h2>
+    <div class="row g-5">
+      <!-- Visi -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-eye fs-3 text-primary mb-3"></i>
+            <h5 class="card-title">Visi</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Menciptakan lulusan yang unggul di bidang teknologi informasi.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Misi -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-target fs-3 text-primary mb-3"></i>
+            <h5 class="card-title">Misi</h5>
+           <ul class="list-unstyled">
+  <li><i class="bi bi-mortarboard me-2 text-primary"></i>Membangun kompetensi lulusan di bidang teknologi informasi.</li>
+  <li><i class="bi bi-lightbulb me-2 text-primary"></i>Mendorong inovasi dalam penerapan teknologi informasi.</li>
+  <li><i class="bi bi-globe me-2 text-primary"></i>Menjadi kontributor dalam pembangunan nasional berbasis teknologi informasi.</li>
+  <li><i class="bi bi-book-half me-2 text-primary"></i>Menyelenggarakan pendidikan berbasis nilai-nilai Islam dan kebangsaan.</li>
+           </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Stats -->
+  <section class="stats bg-light py-5">
+    <div class="container text-center">
+      <h2 class="section-title fade-in mb-5">Statistik Program Studi</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6 fade-in">
+          <div class="counter-card">
+            <i class="bi bi-people-fill fs-1 mb-3"></i>
+            <h5>Total Mahasiswa</h5>
+            <h2 class="count" data-target="2789">0</h2>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 fade-in">
+          <div class="counter-card">
+            <i class="bi bi-person-plus-fill fs-1 mb-3"></i>
+            <h5>Mahasiswa Tahun 2024</h5>
+            <h2 class="count" data-target="638">0</h2>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 fade-in">
+          <div class="counter-card">
+            <i class="bi bi-globe fs-1 mb-3"></i>
+            <h5>Mahasiswa Asing</h5>
+            <h2 class="count" data-target="128">0</h2>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 fade-in">
+          <div class="counter-card">
+            <i class="bi bi-mortarboard-fill fs-1 mb-3"></i>
+            <h5>Total Alumni</h5>
+            <h2 class="count" data-target="3578">0</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Fakultas -->
+<section id="fakultas" class="fakultas py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Fakultas di Universitas</h2>
+    <div class="row g-4">
+      <!-- Fakultas Card -->
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-book fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Keguruan dan Ilmu Pendidikan</h5>
+            <p class="card-text mb-4">Pendidikan guru dan tenaga kependidikan.</p>
+            <a href="fkip.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-building fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Ekonomi dan Bisnis</h5>
+            <p class="card-text mb-4">Manajemen, akuntansi, ekonomi.</p>
+            <a href="feb.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-hospital fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Ilmu Kesehatan</h5>
+            <p class="card-text mb-4">Keperawatan, kesehatan masyarakat.</p>
+            <a href="fikes.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-laptop fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Teknik dan Informatika</h5>
+            <p class="card-text mb-4">Teknik informatika, sistem informasi.</p>
+            <a href="fti.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-journal-album fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Ilmu Sosial dan Politik</h5>
+            <p class="card-text mb-4">Administrasi, hubungan internasional.</p>
+            <a href="fisip.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-chat-left-dots fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Agama Islam</h5>
+            <p class="card-text mb-4">Dakwah, pendidikan agama, syariah.</p>
+            <a href="fai.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-bar-chart fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Hukum</h5>
+            <p class="card-text mb-4">Hukum, ketatanegaraan.</p>
+            <a href="fh.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-cash fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Pertanian</h5>
+            <p class="card-text mb-4">Agribisnis, agronomi, teknologi pangan.</p>
+            <a href="fp.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-in">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <i class="bi bi-person fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fakultas Ilmu Budaya</h5>
+            <p class="card-text mb-4">Sastra, budaya, linguistik.</p>
+            <a href="fib.html" class="btn btn-outline-primary btn-fakultas mt-auto w-100">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mengapa TI & SI Section -->
+<section id="mengapa-ti-si" class="alasan py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title fade-in mb-5">Mengapa Harus Memilih TI & SI?</h2>
+    <p class="text-center mb-5">Program Studi Teknik Informatika dan Sistem Informasi membuka banyak peluang karir dan pembelajaran di era digital. Berikut adalah beberapa alasan mengapa Anda harus memilih TI & SI:</p>
+
+    <div class="row g-4">
+      <!-- Alasan 1 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-gear fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Prospek Karir yang Luas</h5>
+            <p class="card-text">Lulusan TI & SI memiliki peluang karir yang tinggi di berbagai bidang seperti software engineer, data scientist, UI/UX designer, dan banyak lagi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 2 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-laptop fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Fasilitas Laboratorium Terkini</h5>
+            <p class="card-text">Kami menyediakan laboratorium lengkap untuk pengembangan perangkat lunak, AI, jaringan, dan teknologi cloud untuk pembelajaran praktis dan inovasi teknologi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 3 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-book fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Kurikulum Berbasis Industri</h5>
+            <p class="card-text">Kurikulum dirancang sesuai kebutuhan industri teknologi. Mahasiswa diajarkan langsung oleh dosen praktisi dan mitra industri.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 4 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-person-check fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Dosen Profesional dan Berpengalaman</h5>
+            <p class="card-text">Dosen kami adalah praktisi dan akademisi yang berpengalang di bidang teknologi informasi dan pendidikan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 5 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-diagram-3 fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Banyak Jalur Konsentrasi</h5>
+            <p class="card-text">Pilih jalur minat seperti AI, Cybersecurity, Data Science, UI/UX, Cloud Computing, atau Software Engineering sesuai dengan passion Anda.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 6 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-trophy fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Prestasi di Tingkat Nasional & Internasional</h5>
+            <p class="card-text">Program Studi kami terus meraih penghargaan dalam kompetisi teknologi, penelitian, dan pengembangan inovasi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 7 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-wallet fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Peluang Kerja Stabil & Menguntungkan</h5>
+            <p class="card-text">Lulusan TI & SI memiliki peluang kerja tinggi dengan gaji kompetitif di perusahaan teknologi, startup, atau lembaga pemerintah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alasan 8 -->
+      <div class="col-md-6 fade-in">
+        <div class="card h-100 shadow-sm border-start border-4 border-primary">
+          <div class="card-body">
+            <i class="bi bi-robot fs-2 text-primary mb-3"></i>
+            <h5 class="card-title">Teknologi Masa Depan</h5>
+            <p class="card-text">Teknik Informatika dan Sistem Informasi adalah bidang yang terus berkembang sejalan dengan perkembangan teknologi seperti AI, Big Data, Cloud, dan Digitalisasi Bisnis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-5 fade-in">
+      <a href="jalur-konsentrasi.html" class="btn btn-primary btn-lg me-3">
+        <i class="bi bi-diagram-3 me-2"></i>Jalur Konsentrasi
+      </a>
+      <a href="kurikulum.html" class="btn btn-outline-primary btn-lg">
+        <i class="bi bi-journal me-2"></i>Lihat Kurikulum
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Prestasi -->
+  <section id="prestasi" class="prestasi py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title fade-in mb-5">Prestasi Membanggakan</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 fade-in">
+          <div class="card h-100">
+            <div class="card-img-top bg-info d-flex align-items-center justify-content-center text-white" style="height: 250px;">
+              <i class="bi bi-code-slash fs-3"></i>
+            </div>
+            <div class="card-body">
+              <h5>Juara 1 Hackathon Tech Fest</h5>
+              <p class="card-text">Solusi teknologi IoT untuk lingkungan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 fade-in">
+          <div class="card h-100">
+            <div class="card-img-top bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 250px;">
+              <i class="bi bi-journal-text fs-3"></i>
+            </div>
+            <div class="card-body">
+              <h5>Publikasi Internasional</h5>
+              <p class="card-text">Penelitian AI dalam pendidikan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 fade-in">
+          <div class="card h-100">
+            <div class="card-img-top bg-danger d-flex align-items-center justify-content-center text-white" style="height: 250px;">
+              <i class="bi bi-rocket fs-3"></i>
+            </div>
+            <div class="card-body">
+              <h5>Startup Lokal Terbaik</h5>
+              <p class="card-text">Startup alumni terpilih sebagai startup terbaik UMKM Digital Jember.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Kegiatan -->
+<section id="kegiatan" class="kegiatan py-5">
+    <div class="container">
+        <h2 class="section-title fade-in mb-5">Dokumentasi Kegiatan</h2>
+        <div class="row g-4">
+            <!-- Activity 1 -->
+            <div class="col-lg-4 col-md-6 fade-in">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?workshop,technology" class="card-img-top" alt="Workshop IT">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop Pengembangan Aplikasi Mobile</h5>
+                        <p class="card-text text-muted"><small><i class="bi bi-calendar3 me-2"></i>15 Maret 2025</small></p>
+                        <p class="card-text">Mahasiswa belajar membangun aplikasi Android dengan teknologi terbaru dibimbing oleh praktisi industri.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Activity 2 -->
+            <div class="col-lg-4 col-md-6 fade-in">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?company,visit" class="card-img-top" alt="Kunjungan Industri">
+                    <div class="card-body">
+                        <h5 class="card-title">Kunjungan ke Perusahaan Teknologi</h5>
+                        <p class="card-text text-muted"><small><i class="bi bi-calendar3 me-2"></i>28 Februari 2025</small></p>
+                        <p class="card-text">Mahasiswa mendapatkan wawasan langsung tentang operasional perusahaan teknologi ternama di Jawa Timur.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Activity 3 -->
+            <div class="col-lg-4 col-md-6 fade-in">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?seminar,ai" class="card-img-top" alt="Seminar AI">
+                    <div class="card-body">
+                        <h5 class="card-title">Seminar Kecerdasan Buatan</h5>
+                        <p class="card-text text-muted"><small><i class="bi bi-calendar3 me-2"></i>10 Januari 2025</small></p>
+                        <p class="card-text">Diskusi panel tentang perkembangan terkini AI dan aplikasinya di berbagai sektor industri.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Activity 4 -->
+            <div class="col-lg-4 col-md-6 fade-in">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?hackathon,coding" class="card-img-top" alt="Hackathon">
+                    <div class="card-body">
+                        <h5 class="card-title">Kompetisi Hackathon Tahunan</h5>
+                        <p class="card-text text-muted"><small><i class="bi bi-calendar3 me-2"></i>5 Desember 2024</small></p>
+                        <p class="card-text">Acara tahunan dimana mahasiswa berlomba membuat solusi teknologi dalam waktu 24 jam.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Activity 5 -->
+            <div class="col-lg-4 col-md-6 fade-in">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?design,ux" class="card-img-top" alt="Pelatihan UI/UX">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelatihan Desain UI/UX</h5>
+                        <p class="card-text text-muted"><small><i class="bi bi-calendar3 me-2"></i>20 November 2024</small></p>
+                        <p class="card-text">Workshop intensif tentang prinsip-prinsip desain antarmuka dan pengalaman pengguna.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Activity 6 -->
+            <div class="col-lg-4 col-md-6 fade-in">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?webinar,cloud" class="card-img-top" alt="Webinar Internasional">
+                    <div class="card-body">
+                        <h5 class="card-title">Webinar Internasional Teknologi Cloud</h5>
+                        <p class="card-text text-muted"><small><i class="bi bi-calendar3 me-2"></i>8 Oktober 2024</small></p>
+                        <p class="card-text">Kolaborasi dengan pakar cloud computing dari berbagai negara untuk berbagi pengetahuan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View More Button -->
+        <div class="text-center mt-5 fade-in">
+            <a href="#" class="btn btn-primary btn-lg">
+                <i class="bi bi-collection-play me-2"></i>Lihat Semua Kegiatan
+            </a>
+        </div>
+    </div>
+</section>
+
+ <!-- Testimoni Alumni -->
+<section id="testimoni" class="testimoni py-5 parallax-section">
+  <div class="container">
+    <h2 class="section-title fade-in mb-5">Testimoni Alumni</h2>
+    <div class="row g-4">
+      <!-- Testimoni 1 -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-left-quote fs-3 text-primary mb-3"></i>
+            <p class="card-text">"Program Studi Teknik Informatika memberi saya bekal yang luar biasa untuk menghadapi dunia kerja. Sekarang saya bekerja di perusahaan teknologi besar sebagai Software Engineer."</p>
+            <h6 class="mt-3">— Andi Saputra, Alumni 2023</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 2 -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-left-quote fs-3 text-primary mb-3"></i>
+            <p class="card-text">"Sistem Informasi memberi saya kesempatan untuk berkembang di bidang bisnis digital. Sekarang saya sukses mengelola startup sendiri."</p>
+            <h6 class="mt-3">— Lina Putri, Alumni 2022</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-left-quote fs-3 text-primary mb-3"></i>
+            <p class="card-text">"Kurikulum yang up-to-date dan dosen yang berpengalaman membuat saya siap bekerja sebagai Data Scientist segera setelah lulus. Terima kasih Teknik Informatika!"</p>
+            <h6 class="mt-3">— Rudi Hermawan, Alumni 2021</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 4 -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-left-quote fs-3 text-primary mb-3"></i>
+            <p class="card-text">"Proyek-proyek kolaboratif selama kuliah memberi saya pengalaman berharga. Sekarang saya bekerja sebagai IT Consultant di perusahaan multinasional."</p>
+            <h6 class="mt-3">— Siti Rahayu, Alumni 2020</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 5 -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-left-quote fs-3 text-primary mb-3"></i>
+            <p class="card-text">"Fasilitas laboratorium yang lengkap dan jaringan alumni yang kuat sangat membantu karir saya sebagai Cybersecurity Specialist."</p>
+            <h6 class="mt-3">— Budi Santoso, Alumni 2019</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 6 -->
+      <div class="col-md-6 fade-in">
+        <div class="card border-left-primary shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-left-quote fs-3 text-primary mb-3"></i>
+            <p class="card-text">"Saya sangat menghargai pendekatan praktik langsung di program ini. Sekarang saya menjadi Product Manager di perusahaan e-commerce ternama."</p>
+            <h6 class="mt-3">— Dian Permata, Alumni 2022</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Kontak -->
+  <section id="kontak" class="kontak py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title fade-in mb-5">Hubungi Kami</h2>
+      <div class="row g-4">
+        <div class="col-lg-6 fade-in">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Kirim Pesan</h5>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Masukkan email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  <i class="bi bi-send me-2"></i>Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in">
+          <div class="card p-4 h-100">
+            <h5 class="mb-4">Informasi Kontak</h5>
+            <p><i class="bi bi-envelope-fill me-2"></i>Email: ti-si@abcd.ac.id</p>
+            <p><i class="bi bi-telephone-fill me-2"></i>Telepon: (0331) 487001</p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i>Alamat: Jl. Teknik No. 53, Informatika, Sistem Informasi</p>
+            <p><i class="bi bi-clock-fill me-2"></i>Jam Operasional: Senin - Jumat, 08:00 - 16:00 WIB</p>
+            <hr>
+            <h6>Ikuti Kami</h6>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook fs-4 me-2"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-4 me-2"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-4 me-2"></i></a>
+              <a href="#"><i class="bi bi-youtube fs-4 me-2"></i></a>
+              <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Peta Lokasi Kampus -->
+<section id="lokasi" class="lokasi py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title fade-in mb-5 text-center">Lokasi Kampus</h2>
+    <div class="row">
+      <div class="col-md-8 mx-auto fade-in">
+        <div class="ratio ratio-16x9 rounded shadow-sm mb-4">
+          <!-- Ganti src dengan koordinat atau link Google Maps Anda -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3517232746798387!2d113.721127314774414!3d-8.143530984712556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2s0!5e0!3m2!1sid!2sid!4v1617291279752!5m2!1sid!2sid" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi Kampus Universitas ABCD"
+            style="border:0;">
+          </iframe>
+        </div>
+        <div class="text-center">
+          <h5>Alamat Kampus Universitas ABCD</h5>
+          <p>Jl. Teknik No. 53, Informatika, Sistem Informasi</p>
+          <a href=" https://goo.gl/maps/example " target="_blank" class="btn btn-primary">
+            <i class="bi bi-geo-alt me-2"></i>Lihat di Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+<footer class="bg-primary text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Program Studi Teknik Informatika & Sistem Informasi - Universitas ABCD. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js "></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
